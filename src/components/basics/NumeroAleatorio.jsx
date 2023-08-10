@@ -1,11 +1,18 @@
 import React from 'react';
 
 const NumeroAleatorio = (props) => {
-    const result = Math.floor(Math.random() * (props.max - props.min + 1) + props.min);
+    // const min = props.min;
+    const { min, max } = props;
+    // const max = props.max;
+
+    const result = parseInt(Math.random() * (max - min) + min);
 
     return (
-        <>            
-            {result}
+        <>          
+        <h2>Valor Aleatório</h2>  
+        <p><strong>Valor mínimo: {props.min}</strong></p>
+        <p><strong>Valor máximo: {props.max}</strong></p>
+        <p><strong>Valor sorteado: {result}</strong></p>
         </>
     );
 };
