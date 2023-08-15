@@ -4,9 +4,14 @@ import Card from './components/layout/Card';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import ListaProdutos from './components/repeticao/ListaProdutos';
 import DiretaPai from './components/comunicacao/DiretaPai';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
 
 ReactDOM.render(
   <div>
+    <Card titulo="09 - Comun. Inireta" color="silver">
+      <IndiretaPai />
+    </Card>
+
     <Card titulo="08 - Comun. Direta" color="brown">
       <DiretaPai />
     </Card>
