@@ -5,9 +5,19 @@ import ListaAlunos from './components/repeticao/ListaAlunos';
 import ListaProdutos from './components/repeticao/ListaProdutos';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
+import Input from './components/formulario/Input';
+import Contador from './components/contador/Contador';
 
 ReactDOM.render(
   <div>
+    <Card titulo="12 - Classes" color="yellow">
+      <Contador numeroInicial={100} />
+    </Card>
+
+    <Card titulo="11 - Componente Controlado" color="blue">
+      <Input />
+    </Card>
+
     <Card titulo="09 - Comun. Inireta" color="silver">
       <IndiretaPai />
     </Card>
